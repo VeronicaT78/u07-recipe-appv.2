@@ -1,1 +1,49 @@
-<p>header works!</p>
+<nav class="navbar navbar-default">
+    <div class="container fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+              <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+            </button>
+            <a routerLink="/" class="navbar-brand">Recipe Book</a>
+        </div>
+        <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+            <div class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav"> <!--if logged in functionality-->
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" role="button">Meal Type</a>
+                        <select name="dropdown" class="dropdown-menu">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="main course">Main Course</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" role="button">Dish Type</a>
+                        <select name="dropdown" class="dropdown-menu">
+                            <option value="meat">Meat</option>
+                            <option value="chicken">Chicken</option>
+                            <option value="fish">Fish</option>
+                            <option value="vegetarian">Vegetarian</option>
+                        </select>    
+                    </li>  
+                    <li><a href="#">Favourites<i class="bi bi-heart"></i></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" role="button">Account<i class="bi bi-person"></i></a><!--if not collapsed add an if with icon-->
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div> 
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                
+            </ul>
+        </div>
+    </div>
+</nav>

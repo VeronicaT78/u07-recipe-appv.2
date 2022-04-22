@@ -1,5 +1,18 @@
 <div class="row">
     <div class="col-xs-10">
         <p>My list of favourites</p>
+        <ul class="list">
+            <li *ngFor="let favourite of favourites">
+                <a 
+                href="#"
+                class="list-group-item" 
+                style="cursor: pointer"
+                
+                >{{ favourite.title }}</a>
+                <form>
+                    <button type="button" name="Delete" class="btn btn-danger">Delete</button>
+                </form>
+            </li>
+        </ul>
     </div>
 </div>

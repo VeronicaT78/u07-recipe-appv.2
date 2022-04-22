@@ -1,5 +1,7 @@
 # U07RecipeApp
 
+Built from guidelines in Udemy course Angular - The Complete Guide (2022 Edition). Variations in folder, component structure and some added functionality. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Development server

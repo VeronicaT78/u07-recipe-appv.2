@@ -1,5 +1,11 @@
-<div class="row">
-    <div class="col-md-12">
-        <app-recipe-card></app-recipe-card>
+<div class="col-md-12">
+    <div class="col-md-7">
+        <app-recipe-card *ngIf="recipes"></app-recipe-card>
+    </div>
+    <div class="col-md-5">
+        <app-recipe-view></app-recipe-view>
+    </div>
+    <div class="col-md-5">
+        <app-favourite-list></app-favourite-list>
     </div>
 </div>

@@ -11,7 +11,10 @@
                 <ul class="nav navbar-nav"> <!--if logged in functionality-->
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" role="button">Meal Type</a>
-                        <select name="dropdown" class="dropdown-menu">
+                        <select name="dropdown" 
+                        class="dropdown-menu" 
+                        [(value)]="selectedMealType"
+                        (click)="onSelect('type')">
                             <option value="breakfast">Breakfast</option>
                             <option value="main course">Main Course</option>
                             <option value="dessert">Dessert</option>
@@ -19,7 +22,10 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" role="button">Dish Type</a>
-                        <select name="dropdown" class="dropdown-menu">
+                        <select name="dropdown" 
+                        class="dropdown-menu" 
+                        [(value)]="selectedDishType"
+                        (click)="onSelect('query')">
                             <option value="meat">Meat</option>
                             <option value="chicken">Chicken</option>
                             <option value="fish">Fish</option>

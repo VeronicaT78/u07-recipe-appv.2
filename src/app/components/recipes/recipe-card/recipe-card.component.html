@@ -1,25 +1,24 @@
 <div class="row">
-<div class="col-xs-6 col-md-12">
-    <a href="#" 
-      class="clearfix" 
-      *ngFor="let recipe of recipes"
-      >
-        <div class="thumbnail">
-            <!-- <img src="{{ recipe.image }}" alt="">
-            <img [src]="recipe.image" alt=""> här kan du använda binding to source property -->
-            <img src="..." alt="...">
-            <div class="caption">
-                <h3>{{ recipe.title }}</h3>
-                <h5>{{ recipe.servings }}
-                    <span class="glyphicon glyphicon-user"></span><!--add more glyphs per user with a loop-->
-                </h5>
-                <h5>{{ recipe.readyInMinutes }}<span class="glyphicon glyphicon-time"></span></h5>
-                <p>{{ recipe.summary }}</p>
-                <p><a href="#" class="btn btn-primary" role="button">Favourites</a></p>
+    <div class="col-xs-6 col-md-12">
+        <a href="#" 
+        class="clearfix" 
+        >
+            <div class="thumbnail">
+                <!-- <img src="{{ recipe.image }}" alt="">
+                <img [src]="recipe.image" alt=""> här kan du använda binding to source property -->
+                <img src="..." alt="...">
+                <div class="caption">
+                    <h3>{{ recipe.title }}</h3>
+                    <h5>{{ recipe.servings }}
+                        <span class="glyphicon glyphicon-user"></span><!--add more glyphs per user with a loop-->
+                    </h5>
+                    <h5>{{ recipe.readyInMinutes }}<span class="glyphicon glyphicon-time"></span></h5>
+                    <p>{{ recipe.summary }}</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Favourites</a></p>
+                </div>
             </div>
-        </div>
-    </a>
-</div>
+        </a>
+    </div>
 </div>
 
 

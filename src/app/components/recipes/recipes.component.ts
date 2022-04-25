@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Recipe } from './../../models/recipe.model'
 
@@ -8,7 +8,7 @@ import { Recipe } from './../../models/recipe.model'
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  recipes: Recipe[] = [];
+  @Input() recipe: Recipe;
   
   constructor() { }
 

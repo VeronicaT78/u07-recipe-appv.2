@@ -1,6 +1,6 @@
 <div class="col-md-12">
     <div class="col-md-7">
-        <app-recipe-card *ngIf="recipes"></app-recipe-card>
+        <app-recipe-card *ngFor="let recipeEl of recipes" [recipe]="recipeEl"></app-recipe-card>
     </div>
     <div class="col-md-5">
         <app-recipe-view></app-recipe-view>
